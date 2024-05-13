@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Intern_Project/assets/Images/the Pet Land.png" type="image/x-icon">
+    <title>The Pet Land: Get your Loyal Friend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="hamburger" src="hamburger.svg" alt="hamburger">
+            <img class="img" src="/Intern_Project/assets/Images/the Pet Land.png" alt="The Pet Land">
+            <div class="logo-name">
+                <h3>The Pet Land</h3>
+                <h5>Get Your Loyal Friend</h5>
+            </div>
+        </div>
+        <div class="log-in">
+            <button class="log-in-btn"> <a href="#" onclick="showContent('SignUp')"> LogIn / SignUp </a> </button>
+        </div>
+    </header>
+    <div class="main">
+        <section class="left">
+            <div class="blank">
+                <img class="cross" src="cross.svg" alt="cross">
+                <div class="left-box">
+                    <div class="left-box-content">
+                        <ul class="unordered-list">
+                            <li><a href="#" onclick="showContent('home')">Home</a></li>
+                            <li><a href="#" onclick="showContent('Shop')">Shop</a></li>
+                            <li><a href="#" onclick="showContent('adopt')">Adopt</a></li>
+                            <li><a href="#" onclick="showContent('service')">Service</a></li>
+                            <li><a href="#" onclick="showContent('about')">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <button> <a href="#" onclick="showContent('SignUp')">LogIn / SignUp</a></button>
+                        <div class="company">
+                            <img src="/Intern_Project/assets/Images/afame.png" alt="afame">
+                          <h2> Afame Technologies </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="resizable-bar"></div>
+            </div>
+        </section>
+        <section class="right">
+            <div class="home" id="home">
+                <nav>
+                    <h1> Find Your Furry Friend: Explore 'THE PET LAND' ❤️ </h1>
+                </nav>
+                <div class="first">
+                    <div class="first-box"></div>
+                    <div class="heading1">
+                        <h4>🐾 Want Companionship?</h4>
+                        <h5>
+                            ●Through every moment, I'll be your unwavering friend, a loyal companion who fills your days
+                            with love without end.<br>● Together, we'll share laughter and tears, our bond growing
+                            stronger through the years. <br>
+                            ● So take my paw and let's embark on this journey together, for in each other's company, we'll
+                            find joy that lasts forever."
+                        </h5>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="second-box"></div>
+                    <div class="heading1">
+                        <h4>🐾 Want Unconditional Love?</h4>
+                        <h5>
+                            ● Within these furry paws lies a love unbound, a devotion that knows no bounds, a bond that
+                            time can never sever.<br> ● Through every joy and every storm, my heart beats only for yours.
+                            <br>
+                            ● Take me home, and together we'll write a story of love and loyalty, where every chapter is
+                            filled with the warmth of our eternal companionship."
+                        </h5>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="third-box"></div>
+                    <div class="heading1">
+                        <h4>🐾 Want Good Health ?</h4>
+                        <h5>
+                            ● Feel the weight of the world lift as you stroke my fur, your worries melting away with every
+                            gentle purr.<br>
+                            ● Together, let's embark on a journey of healing and health, where each wag of my tail brings
+                            joy and wealth.<br>● So take me home, and let's nurture each other's well-being, for in our
+                            bond lies the key to serenity and inner healing."
+                        </h5>
+                    </div>
+                </div>
+                <div class="fourth">
+                    <div class="fourth-box"></div>
+                    <div class="heading1">
+                        <h4>🐾 Want Entertainment and Joy?</h4>
+                        <h5>
+                            ● Together, we'll create a haven of security and peace, where fears dissipate and worries
+                            cease.<br>
+                            ● Through playful antics and boundless affection, let me be the source of your laughter and
+                            delight, turning mundane moments into memories bright.<br>
+                            ● So take my paw, and let's embark on a journey filled with love, laughter, and endless joy,
+                            where every day is an adventure with me, your loyal companion by your side."
+                        </h5>
+                    </div>
+                </div>
+                <div class="line">.</div>
+            </div>
+            <div class="Shop" id="Shop">
+                <nav>
+                    <h1>🛍️✨ Welcome to our Pet Store! ✨🛍️</h1>
+                </nav>
+                <div class="box1">
+                    <div class="one">
+                        <nav class="nav">
+                            <h2> Dog Store🐶</h2>
+                        </nav>
+                        <div class="dog">
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy1.jpg" alt="dog1">
+                                <div class="name">
+                                    <h4> Shih Tzu Little Pup </h4>
+                                    <h5> ₹50K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Shih Tzu Little Pup', 50000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy2.jpg" alt="dog2">
+                                <div class="name">
+                                    <h4> Welsh Corgi Little Puppy </h4>
+                                    <h5> ₹1.2lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Welsh Corgi Little Puppy', 120000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy3.jpg" alt="dog3">
+                                <div class="name">
+                                    <h4> Little Bulldog Puppy </h4>
+                                    <h5> ₹22K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Little Bulldog Puppy', 22000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy4.jpg" alt="dog4">
+                                <div class="name">
+                                    <h4> Trained Golden Retriever Dog </h4>
+                                    <h5> ₹40K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Trained Golden Retriever Dog', 40000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy5.jpg" alt="dog5">
+                                <div class="name">
+                                    <h4> Chow Chow Puppy </h4>
+                                    <h5> ₹60K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Chow Chow Puppy', 60000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy6.jpg" alt="dog6">
+                                <div class="name">
+                                    <h4> Well trained Bulldog </h4>
+                                    <h5> ₹30K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Well trained Bulldog', 30000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/Puppy7.jpg" alt="dog7">
+                                <div class="name">
+                                    <h4> Golden Retriever Little Pup </h4>
+                                    <h5> ₹30K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Golden Retriever Little Pup', 30000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/puppy8.jpg" alt="dog8">
+                                <div class="name">
+                                    <h4> Pomeranian Little Pup </h4>
+                                    <h5> ₹18K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Pomeranian Little Pup', 18000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dog1">
+                                <img src="/Intern_Project/assets/Images/puppy9.jpg" alt="dog9">
+                                <div class="name">
+                                    <h4> Pomeranian Puppy </h4>
+                                    <h5> ₹23K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Pomeranian Puppy', 23000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <nav class="nav">
+                            <h2> Cat Store 🐱 </h2>
+                        </nav>
+                        <div class="cat">
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/Kitty1.jpg" alt="cat1">
+                                <div class="name">
+                                    <h4> Persian Little Kitty </h4>
+                                    <h5> ₹35K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Persian Little Kitty', 35000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/Kitty2.jpg" alt="cat2">
+                                <div class="name">
+                                    <h4> Savannah Cat </h4>
+                                    <h5> ₹11Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Savannah Cat', 1100000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/Kitty3.jpg" alt="cat3">
+                                <div class="name">
+                                    <h4> LaPerm Cat </h4>
+                                    <h5> ₹92K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('LaPerm Cat', 92000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/Kitty4.jpg" alt="cat4">
+                                <div class="name">
+                                    <h4> British Colorpoint Shorthair Cat </h4>
+                                    <h5> ₹93K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('British Colorpoint Shorthair Cat', 93000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/kitty5.jpeg" alt="cat5">
+                                <div class="name">
+                                    <h4> British Shorthair Grey kitty </h4>
+                                    <h5> ₹92K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('British Shorthair Grey kitty', 92000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/kitty6.jpg" alt="cat6">
+                                <div class="name">
+                                    <h4> British Shorthair Brown Kitten </h4>
+                                    <h5> ₹1Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('British Shorthair Brown Kitten', 100000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/kitty7.jpeg" alt="cat7">
+                                <div class="name">
+                                    <h4> Cheetoh Kitten </h4>
+                                    <h5> ₹1Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Cheetoh Kitten', 100000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/kitty8.jpeg" alt="cat8">
+                                <div class="name">
+                                    <h4> British Longhair Kitten </h4>
+                                    <h5> ₹80K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('British Longhair Kitten', 80000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat1">
+                                <img src="/Intern_Project/assets/Images/kitty9.jpeg" alt="cat9">
+                                <div class="name">
+                                    <h4> British Longhair Grey Kitty </h4>
+                                    <h5> ₹85K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('British Longhair Grey Kitty', 85000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <nav class="nav">
+                            <h2> Rabbit Store 🐰</h2>
+                        </nav>
+                        <div class="rabbit">
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny1.jpg" alt="rabbit1">
+                                <div class="name">
+                                    <h4> Dutch Breed Baby Bunny </h4>
+                                    <h5> ₹2.4K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Dutch Breed Baby Bunny', 2400)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny2.jpg" alt="rabbit2">
+                                <div class="name">
+                                    <h4> Newzealand Red Rabbit </h4>
+                                    <h5> ₹2.2K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Newzealand Red Rabbit', 2200)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny3.jpg" alt="rabbit3">
+                                <div class="name">
+                                    <h4> American White Bunny </h4>
+                                    <h5> ₹2.5K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('American White Bunny', 2500)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny4.jpg" alt="rabbit4">
+                                <div class="name">
+                                    <h4> Chinchilla Rabbit </h4>
+                                    <h5> ₹2.7K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Chinchilla Rabbit', 2700)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny5.jpg" alt="rabbit5">
+                                <div class="name">
+                                    <h4> Creme d'argent Bunny </h4>
+                                    <h5> ₹2.3K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Creme dargent Bunny', 2300)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rabbit1">
+                                <img src="/Intern_Project/assets/Images/Bunny6.jpg" alt="rabbit6">
+                                <div class="name">
+                                    <h4> Thrianta Little Bunny </h4>
+                                    <h5> ₹3K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Thrianta Little Bunny', 3000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four">
+                        <nav class="nav">
+                            <h2> Parrot Store 🦜</h2>
+                        </nav>
+                        <div class="parrot">
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot1.jpg" alt="parrot1">
+                                <div class="name">
+                                    <h4> Cockatoos Parrot </h4>
+                                    <h5> ₹7Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Cockatoos Parrot', 700000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot2.jpg" alt="parrot2">
+                                <div class="name">
+                                    <h4> Blue Budgie Parrot </h4>
+                                    <h5> ₹2.2K </h5>
+                                    <div class="place">
+                                    <button class="cart" onclick="addToCart('Blue Budgie Parrot', 2200)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot3.jpg" alt="parrot3">
+                                <div class="name">
+                                    <h4> Pionus Parrot </h4>
+                                    <h5> ₹3.8K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Pionus Parrot', 3800)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot4.jpg" alt="parrot4">
+                                <div class="name">
+                                    <h4> African Macaw Parrot </h4>
+                                    <h5> ₹15Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('African Macaw Parrot', 1500000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot5.jpeg" alt="parrot5">
+                                <div class="name">
+                                    <h4> major mitchell's cockatoo Parrot </h4>
+                                    <h5> ₹11Lakhs </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('major mitchell cockatoo Parrot', 1100000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="parrot1">
+                                <img src="/Intern_Project/assets/Images/parrot6.jpg" alt="parrot6">
+                                <div class="name">
+                                    <h4> cockatiel Bird Parrot </h4>
+                                    <h5> ₹50K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('cockatiel Bird Parrot', 50000)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="five">
+                        <nav class="nav">
+                            <h2> Fish Store 🐟</h2>
+                        </nav>
+                        <div class="fish">
+                            <div class="fish1">
+                                <img src="/Intern_Project/assets/Images/fish1.jpeg" alt="fish1">
+                                <div class="name">
+                                    <h4> Gold Fish </h4>
+                                    <h5> ₹35/piece </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Gold Fish', 35)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fish1">
+                                <img src="/Intern_Project/assets/Images/fish2.jpeg" alt="fish2">
+                                <div class="name">
+                                    <h4> Cherry Barb fish </h4>
+                                    <h5> ₹45/piece </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Cherry Barb fish', 45)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fish1">
+                                <img src="/Intern_Project/assets/Images/fish3.jpeg" alt="fish3">
+                                <div class="name">
+                                    <h4> Guppy Fish </h4>
+                                    <h5> ₹20/piece </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Guppy Fish', 20)">Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="six">
+                        <nav class="nav">
+                            <h2> Hamster Store 🐹</h2>
+                        </nav>
+                        <div class="rat">
+                            <div class="rat1">
+                                <img src="/Intern_Project/assets/Images/rat1.jpeg" alt="rat1">
+                                <div class="name">
+                                    <h4> Syrian Hamster </h4>
+                                    <h5> ₹3.1K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Syrian Hamster', 3100)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rat1">
+                                <img src="/Intern_Project/assets/Images/rat2.jpeg" alt="rat2">
+                                <div class="name">
+                                    <h4> Djungarian Hamster </h4>
+                                    <h5> ₹2.5K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Djungarian Hamster', 2500)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rat1">
+                                <img src="/Intern_Project/assets/Images/rat3.jpeg" alt="rat3">
+                                <div class="name">
+                                    <h4> Longhaired Syrian Hamster </h4>
+                                    <h5> ₹3.5K/pair </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Longhaired Syrian Hamster', 3500)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seven">
+                        <nav class="nav">
+                            <h2> Bird Store 🐦</h2>
+                        </nav>
+                        <div class="bird">
+                            <div class="bird1">
+                                <img src="/Intern_Project/assets/Images/bird1.jpeg" alt="bird1">
+                                <div class="name">
+                                    <h4> Canary Bird </h4>
+                                    <h5> ₹350 </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Canary Bird', 350)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bird1">
+                                <img src="/Intern_Project/assets/Images/bird2.jpeg" alt="bird2">
+                                <div class="name">
+                                    <h4> Romeo Bird </h4>
+                                    <h5> ₹320 </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Romeo Bird', 320)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bird1">
+                                <img src="/Intern_Project/assets/Images/bird3.jpeg" alt="bird3">
+                                <div class="name">
+                                    <h4> Lovebirds Bird </h4>
+                                    <h5> ₹3.6K </h5>
+                                    <div class="place">
+                                        <button class="cart" onclick="addToCart('Lovebirds Bird', 3600)"> Add To Basket</button>
+                                        <button class="order"> Place Order </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart" class="Cart"> 
+                    <div class="shopping">
+                        <h2>Shopping Cart</h2>
+                        <ul id="cart-items">
+                        </ul>
+                        <button>Checkout</button>
+                    </div>   
+                    <div class="basket">
+                        <img src="basket.svg" alt="basket">
+                        <span id="cart-items-count">0</span>
+                        <p>Total: <span id="cart-total">₹0.00</span></p>
+                    </div>
+                  </div>
+                <div class="line">.</div>
+            </div>
+            <div class="adopt" id="adopt">
+                <nav>
+                    <h1> 🐾 Welcome to Our Adoption Center! 🐾 </h1>
+                </nav>
+                <div class="box2">
+                    <div class="heading2">
+                        <h2> At "The Pet Land: Get Your Loyal Friend", we believe in finding forever homes for every
+                            furry friend. Our adoption process is designed to match loving animals with caring families,
+                            creating bonds that last a lifetime. </h2>
+                    </div>
+                    <div class="rescue">
+                        <div class="A">
+                            <h3> Why Adopt from Us? </h3>
+                            <h4>• Rescue & Rehome: By adopting from us, you're not just getting a pet; you're giving a
+                                second chance to an animal in need.</h4>
+                            <h4> • Health & Care: Every animal in our care receives top-notch veterinary attention,
+                                ensuring they are healthy and ready to join your family.</h4>
+                            <h4>  • Support & Guidance: We provide ongoing support and guidance to help you and your new pet
+                                transition smoothly into your home. </h4>
+                        </div>
+                        <div class="A">
+                            <h3> Meet Our Pets: </h3>
+                            <div class="some-pics">
+                                <img src="/Intern_Project/assets/Images/street1.jpeg" alt="street1">
+                                <img src="/Intern_Project/assets/Images/street2.jpeg" alt="street2">
+                                <img src="/Intern_Project/assets/Images/street3.jpeg" alt="street3">
+                                <img src="/Intern_Project/assets/Images/street4.jpeg" alt="street4">
+                                <img src="/Intern_Project/assets/Images/street5.jpg" alt="street5">
+                                <img src="/Intern_Project/assets/Images/street6.jpeg" alt="street6">
+                                <img src="/Intern_Project/assets/Images/street7.jpg" alt="street7">
+                                <img src="/Intern_Project/assets/Images/street8.jpeg" alt="street8">
+                            </div>
+                        </div>
+                        <div class="A">
+                            <h3> Adoption Process: </h3>
+                            <h4>• Visit Us: Stop by our adoption center to meet our adorable pets in person. </h4>
+                            <h4>• Meet & Greet: Spend time getting to know the animals and find the perfect match for
+                                your lifestyle.</h4>
+                            <h4>• Application: Complete our adoption application to ensure the best fit for both you and
+                                the pet.</h4>
+                            <h4>• Home Visit: We may conduct a brief home visit to ensure it's a safe environment for
+                                your new furry friend.</h4>
+                            <h4>• Finalize Adoption: Once approved, complete the adoption paperwork and take your new
+                                family member home! </h4>
+                        </div>
+                        <div class="A">
+                            <h3> Adoption Fees: </h3>
+                            <h4> Our adoption fees vary depending on the animal's age, species, and medical history.
+                                Rest assured, your fee contributes to the care and well-being of all our animals.</h4>
+                        </div>
+                        <div class="A">
+                            <h3> Ready to Adopt? </h3>
+                            <h4> If you're ready to open your heart and home to a loving companion, visit us today!
+                                Together, we can make a difference in the lives of animals in need. </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service" id="service">
+                <nav>
+                    <h1> Extra Services For Your Pets 😊 </h1>
+                </nav>
+                <div class="box3">
+                    <div class="service-list">
+                        <div class="list">
+                            <h3>1. Grooming Services:</h3>
+                            <h4>Offer professional grooming services for pets, including baths, haircuts, nail trimming, and ear cleaning.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>2. Pet Boarding or Daycare:</h3>
+                            <h4>Provide a safe and comfortable environment for pets when their owners are away, whether for the day or an extended period.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>3. Pet Training Classes:</h3>
+                            <h4>Offer obedience training classes or workshops to help pet owners teach their pets basic commands and good behavior.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>4. Veterinary Services:</h3>
+                            <h4>Partner with a local veterinarian to offer on-site health check-ups, vaccinations, and consultations for pet owners.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>5. Pet Sitting or Walking:</h3>
+                            <h4>Provide pet sitting services for owners who need someone to care for their pets while they're at work or on vacation. Offer dog walking services for busy pet owners.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>6. Nutritional Counseling: </h3>
+                            <h4>Offer advice and recommendations on pet nutrition and dietary needs, including suggestions for specialized diets or supplements.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>7. Pet Adoption Events:</h3>
+                            <h4> Host adoption events in collaboration with local animal shelters or rescue organizations to help pets find loving homes.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>8. Pet Photography Sessions: </h3>
+                            <h4> Arrange professional photo sessions to capture special moments with pets, either in-store or at outdoor locations.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>9. Pet Accessories and Supplies:</h3>
+                            <h4>Besides selling pet supplies, offer services like fitting for harnesses, collars, or other accessories to ensure pets have the right gear for their needs.</h4>
+                        </div>
+                        <div class="list">
+                            <h3>10. Microchipping Services: </h3>
+                            <h4> Provide microchipping services to help pet owners ensure their pets can be easily identified and reunited if lost.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about">
+                <div class="box4">
+                    <nav>
+                        <h1>"The Pet Land" - Your Trusted Source for Happy, Healthy Pets</h1>
+                    </nav>
+                    <div class="about-us">
+                        <p>Welcome to "The pet Land", where we specialize in connecting families with loving, well-cared-for pets. With a dedication to responsible pet ownership and ethical sourcing, we strive to make the adoption process a joyful and fulfilling experience for both animals and their new families.</p>
+                        <br>
+                        <h3>Who We Are:</h3>
+                        <h4>Founded by 'Tanya Dubey' in '2021', THE PET LAND is more than just a pet store – we're a compassionate community of animal lovers dedicated to promoting the well-being of all creatures great and small. Our team consists of knowledgeable staff members who are passionate about matching each pet with the perfect forever home.</h4>
+                        <br>
+                        <h3>Our Mission:</h3>
+                        <h4>At 'The Pet Land', our mission is twofold: to provide a loving home for every pet and to educate our customers about responsible pet ownership. We believe that every animal deserves to be treated with kindness, respect, and dignity, and we're committed to upholding the highest standards of animal welfare in everything we do.</h4>
+                        <br>
+                        <div class="choose-us">
+                            <h3>Why Choose Us:</h3>
+                            <h4>Ethical Sourcing:</h4>
+                            <p> We partner with reputable breeders and rescue organizations to ensure that all our animals are healthy, happy, and responsibly bred or rescued.</p>
+                            <br>
+                            <h4>Comprehensive Care:</h4>
+                            <p>From the moment they arrive at our shop to the day they find their forever homes, our animals receive the best possible care, including regular veterinary check-ups, nutritious food, and plenty of love and attention.</p>
+                            <br>
+                            <h4>Lifetime Support: </h4>
+                            <p>Our commitment to our customers doesn't end when they take their new pet home. We're here to provide guidance, support, and resources for the entire lifetime of their furry friend.</p>
+                            <br>
+                            <h4>Find Your Perfect Pet:</h4>
+                            <p>Ready to welcome a new member into your family? Visit us at Gurgaon, Manesar, where you can meet our adorable animals in person and learn more about their personalities, needs, and adoption requirements. Our knowledgeable staff members are always on hand to help you find the perfect match!</p>
+                        </div>
+                        <br>
+                        <div class="contact">
+                            <h3>Contact Us:</h3>
+                            <h4>Address: <p> The Pet Land Shop, Manesar, Gurgaon, Haryana, India</p></h4>
+                            <h4>Email: <p> Thepetland@gmail.com</p></h4>
+                            <h4>Call us: <p> Phone: 555-123-4567</p></h4>
+                        </div>
+                        <h2>Thank you for choosing THE PET LAND for all your pet adoption and Buying needs. Together, let's make the world a better place, one wagging tail and happy purr at a time.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="SignUp">
+                <nav>
+                    <h2> Sign-Up Form </h2>
+                </nav>
+                <div class="box">
+                    <div class="SignUp-Box">
+                        <div class="FName">
+                            <label for="email">First Name:</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="SName">
+                            <label for="email">Second Name:</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="pswd">
+                            <label for="password">Password:</label>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember_me">
+                            <label for="remember_me">Remember me</label>
+                        </div>
+                        <button> <a href="#">Sign Up</a></button>
+                        <div class="login_signup">Already have an account? <a href="#" id="LogIn" onclick="showContent('LogIn')">Log In</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="LogIn">
+                <nav>
+                    <h2> Log-In Form </h2>
+                </nav>
+                <div class="box">
+                    <div class="LogIn-Box">
+                        <div class="email">
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="pswd">
+                            <label for="password">Password:</label>
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember_me">
+                            <label for="remember_me">Remember me</label>
+                        </div>
+                        <button> <a href="#">Log In</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
