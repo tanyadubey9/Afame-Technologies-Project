@@ -1,0 +1,867 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-color);
+    /* font-family: 'Montserrat', sans-serif; */
+}
+
+:root {
+    --body-color: rgb(251 227 227);
+    --first-color: rgb(248 205 201);
+    --second-color: rgba(240, 185, 185, 0.81);
+    --font-color-1: rgb(114 5 5);
+    --font-color-2: rgb(218 0 83);
+    --nav-color-1: rgba(236, 116, 138, 0.75);
+    --scroll-color: rgba(251, 166, 158, 0.87);
+    --light-white-bg-1: rgb(255, 255, 255, 0.75);
+    --button-color-1: rgba(239, 171, 183, 0.67);
+    --light-white-bg-2: rgba(255, 255, 255, 0.48);
+    --line-color: rgb(255 91 132);
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-color);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(249 146 136);
+}
+
+header {
+    background-color: var(--first-color);
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+    position: relative;
+}
+
+header .log-in {
+    width: 14vw;
+    text-align: center;
+}
+
+header button {
+    box-shadow: 0 0 20px var(--font-color-1);
+    font-size: 1.1vw;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 8px;
+    border: 0;
+    width: 12vw;
+}
+header button:hover {
+    padding: 6px;
+    font-size: 1.2vw;
+}
+
+.hamburger {
+    display: none;
+}
+
+.main{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    min-height: 390px;
+}
+
+.left {
+    max-width: 450px;
+    background-image: url(/Intern_Project/assets/Images/left.jpeg);
+    background-size: 300px 650px;
+    position: relative;
+    overflow: hidden;
+    width: 333px;
+    min-width: 270px;
+    border-radius: 20px;
+}
+
+.cross{
+    display: none;
+}
+
+.resizable-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: rgb(251 227 227);
+    cursor: grab;
+}
+.resizable-bar:hover{
+    box-shadow: 0px 0px 14px 2px rgb(255 86 148);
+}
+
+.left-box{
+    width: calc(100% - 10px);
+    height: 100%;
+    position: relative;
+    padding: 10px;
+}
+
+.left-box-content{
+    height: 50vh;
+    overflow-y: scroll;
+    width: 260px;
+    overflow-x: hidden;
+    min-height: 190px;
+}
+
+.blank{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(235, 164, 176, 0.37);
+}
+
+.logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo .img {
+    width: 3vw;
+    border-radius: 50px;
+}
+
+.left ul {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.left li {
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+    font-size: 1.5vw;
+    font-weight: 900;
+    width: 195px;
+    background-color: var(--light-white-bg-1);
+}
+
+.left a {
+    text-decoration: none;
+    color: var(--font-color-1);
+}
+.left a:hover {
+    text-decoration: underline;
+}
+
+.details{
+    width: 250px;
+    height: 111px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    position: absolute;
+    margin-top: 45px;
+}
+
+.company{
+    color: var(--font-color-1);
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.company img{
+    width: 20px;
+    margin-right: 4px;
+}
+
+.details button{
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--button-color-1);
+    color: white;
+    font-size: 1vw;
+    font-weight: 800;
+    border: 2px solid white;
+    width: 10vw;
+}
+.details button:hover{
+    padding: 6px;
+    font-size: 1.1vw;
+}
+
+.right{
+    height: 100%;
+    width: 100%;
+    background-color: var(--first-color);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+.right:hover{
+    overflow-y: scroll;
+}
+
+.right nav{
+    height: 80px;
+    font-size: 1.5vw;
+    background-color: var(--nav-color-1);
+    color: white;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    width: 100%;
+}
+
+.right > div:not(.home) {
+    display: none;
+}
+
+.first, .second, .third, .fourth{
+    height: 45vh;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-color);
+    margin: 17px;
+    border-radius: 20px;
+}
+
+.first-box{
+    background-image: url(/Intern_Project/assets/Images/pet1.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 36vw;
+    height: 40vh;
+    position: relative;
+    margin: 10px;
+}
+
+.second-box{
+    background-image: url(/Intern_Project/assets/Images/pet2.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 36vw;
+    height: 40vh;
+    position: relative;
+    margin: 10px;
+}
+
+.third-box{
+    background-image: url(/Intern_Project/assets/Images/pet3.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 36vw;
+    height: 40vh;
+    position: relative;
+    margin: 10px;
+}
+
+.fourth-box{
+    background-image: url(/Intern_Project/assets/Images/pet4.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 36vw;
+    height: 40vh;
+    position: relative;
+    margin: 10px;
+}
+
+.heading1{
+    width: 50%;
+    height: 40vh;
+    font-size: 1.4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading1 h4{
+    padding: 0.3vw;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, var(--light-white-bg-1), transparent);
+}
+
+.heading1 h5{
+    background-image: linear-gradient(45deg, var(--light-white-bg-2), transparent);
+    color: var(--font-color-2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: var(--line-color);
+    margin: 20px 0 20px 0;
+}
+
+.Shop{
+    height: 762vh;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: var(--second-color);
+}
+
+.Shop .nav{
+    display: flex;
+    width: 70vw;
+    height: 65px;
+    font-size: 1.1vw;
+    background-color: var(--light-white-bg-1);
+    color: var(--line-color);
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.3vw;
+    color: var(--font-color-2);
+}
+
+.dog, .cat, .rabbit, .parrot, .rat, .fish, .bird{
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+}
+
+.dog1, .cat1, .rabbit1, .parrot1, .rat1, .fish1, .bird1{
+    margin: 10px;
+    background-color: rgb(245 156 172);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dog1 img, .cat1 img, .rabbit img, .parrot img, .rat img, .fish img, .bird img{
+    width: 10vw;
+    border-radius: 20px;
+}
+
+.Shop .name{
+    background-image: linear-gradient(45deg, var(--light-white-bg-1), transparent);
+    margin: 12px;
+    padding: 12px;
+    border-radius: 20px;
+    width: 14vw;
+}
+
+.Shop .place button{
+    font-weight: 600;
+    padding: 5px;
+    margin: 12px 3px 6px 3px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 0.7vw;
+    color: white;
+}
+.Shop .place button:hover{
+    padding: 7px;
+}
+
+.Shop .cart{
+    background-color: rgba(115, 198, 115, 0.77);
+}
+
+.Shop .order{
+    background-color: var(--line-color);
+    color: white;
+}
+
+.Cart{
+    position: absolute;
+    bottom: 0;
+    z-index: 4;
+    background-color: rgb(251, 166, 158);
+    width: 84%;
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--font-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Cart button{
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: var(--button-color-1);
+    color: var(--font-color-1);
+    margin: 5px;
+}
+
+.adopt{
+    background-color: var(--second-color);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.adopt .heading2{
+    width: 80%;
+    background-color: white;
+    font-size: 1vw;
+    border-radius: 20px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    color: rgb(249 11 52);
+}
+
+.adopt .rescue{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.4vw;
+}
+
+.A{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: var(--second-color);
+    color: var(--font-color-2);
+    background-image: linear-gradient(45deg, var(--light-white-bg-2), transparent);
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.A h3{
+    background-color: #da8989;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.A h4{
+    margin: 10px;
+}
+
+.adopt .some-pics{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.adopt .some-pics img{
+    width: 9vw;
+    margin: 10px;
+}
+
+.service{
+    background-color: var(--second-color);
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.service-list{
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.service .list{
+    margin: 10px;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.service h3{
+    background-color: #da8989;
+    border-radius: 20px;
+    padding: 2px;
+    color: white;
+}
+
+.service h4{
+    color: var(--font-color-2);
+    background-image: linear-gradient(45deg, var(--light-white-bg-2), transparent);
+}
+
+.about nav{
+    margin: 10px 10px 0px 10px;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.about h3{
+    font-size: 1.3vw;
+    background-color: #da8989;
+    border-radius: 20px 20px 20px 0px;
+    color: white;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+}
+
+.about h4{
+    font-size: 1.2vw;
+    color: var(--font-color-2);
+    background-image: linear-gradient(45deg, var(--light-white-bg-2), transparent);
+    padding: 10px;
+    margin: 0px 10px 10px 10px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.about p{
+    font-size: 1.2vw;
+    color: deeppink;
+    background-image: linear-gradient(45deg, white, transparent);
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+    font-weight: 700;
+    border-radius: 20px;
+    border-radius: 0px 20px 20px 20px;
+}
+
+.about h2{
+    padding: 10px;
+    background-color: var(--light-white-bg-2);
+    color: var(--line-color);
+    font-size: 1.4vw;
+    margin: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+.choose-us h4{
+    margin: 10px 10px 0 10px;
+    border-radius: 20px 20px 20px 0px;
+}
+
+.SignUp, .LogIn{
+    width: 100%;
+    height: 100%;
+    background-color: var(--second-color);
+}
+
+.SignUp .box, .LogIn .box{
+    width: 60%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-color);
+    border-radius: 20px;
+    margin-top: 25px; 
+}
+
+.SignUp .SignUp-Box, .LogIn .LogIn-Box{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+    width: 45%;
+    height: 75%;
+    border-radius: 20px;
+    background-color: var(--button-color-1);
+    color: var(--font-color-2);
+}
+
+.SignUp input, .LogIn input{
+    padding: 8px;
+    border-radius: 20px;
+    border: 0;
+    margin: 10px;
+}
+
+.checkbox{
+    text-align: start;
+    font-size: 0.8vw;
+    color: white;
+    margin: auto;
+}
+
+.SignUp button, .LogIn button{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    font-size: 0.8vw;
+    border-radius: 20px;
+    background-color: var(--nav-color-1);
+    border: 2px solid white;
+}
+.SignUp button:hover, .LogIn button:hover{
+    font-size: 0.9vw;
+    padding: 11px;
+}
+
+.SignUp button a, .LogIn button a{
+    text-decoration: none;
+    color: white;
+}
+.SignUp button a:hover, .LogIn button a:hover{
+    text-decoration: underline;
+}           
+
+@media (max-width: 1200px) {
+    header{
+        font-size: 2vw;
+    }
+
+    .logo .img{
+        width: 6vw;
+    }
+
+    header .log-in{
+        width: 20vw;
+    }
+
+    header button{
+        font-size: 1.6vw;
+    padding: 6px;
+    width: 16vw;
+    }
+
+    .left {
+        position: absolute;
+        left: -350px;
+        z-index: 3;
+        transition: all .33s;
+        height: 80vh;
+        width: 250px;
+    }
+
+    .left-box-content{
+        width: 190px;
+    }
+
+    .left li{
+        width: 150px;
+    }
+
+    .details button {
+        font-size: 2vw;
+        width: 20vw;
+    }
+
+    .cross {
+        display: block;
+        top: 12px;
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+    }
+
+    .hamburger {
+        display: block;
+        width: 3vw;
+        padding: 10px;
+    }
+
+    .left li {
+        font-size: 20px;
+    }
+
+    .right nav {
+        font-size: 2.7vw;
+    }
+
+    .heading1 {
+        font-size: 2vw;
+    }
+
+    .first-box {
+        width: 42vw;
+        height: 42vh;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        height: 43vh;
+    }
+
+    .dog1, .cat1, .rabbit1, .parrot1, .rat1, .fish1, .bird1{
+        padding: 5px;
+    }
+
+    .dog1 img, .cat1 img, .rabbit img, .parrot img, .rat img, .fish img, .bird img{
+        width: 9vw;
+    }
+    
+    .Shop .name{
+        margin: 10px;
+        padding: 6px;
+    }
+
+    .service .list{
+        font-size: 2vw;
+    }
+
+    .about p{
+        font-size: 1.8vw;
+    }
+
+    .about h3{
+        font-size: 2vw;
+    }
+
+    .about h4{
+        font-size: 1.9vw;
+    }
+
+    .about h2{
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 700px) {
+    header{
+        height: 70px;
+        font-size: 2.4vw;
+    }
+
+    .hamburger{
+        width: 4vw;
+    }
+
+    .logo .img{
+        width: 8vw;
+    }
+
+    .details button {
+        font-size: 3vw;
+        width: 30vw;
+    }
+
+    .right nav{
+        height: 50px;
+        font-size: 3vw;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth {
+        height: 32vh;
+    }
+
+    .heading1 {
+        font-size: 2.2vw;
+    }
+
+    .first-box, .second-box, .third-box, .fourth-box {
+        width: 50vw;
+        height: 26vh;
+    }
+
+    .dog, .cat, .rabbit, .parrot, .rat, .fish, .bird{
+        grid-template-columns: repeat( 2, 1fr);
+    }
+
+    .dog1, .cat1, .rabbit1, .parrot1, .rat1, .fish1, .bird1{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .dog1 img, .cat1 img, .rabbit img, .parrot img, .rat img, .fish img, .bird img{
+        width: 12vw;
+    }
+    
+    .Shop .name{
+        margin: 12px;
+        padding: 8px;
+        width: 16vw;
+    }
+
+    .Shop .place button {
+        padding: 3px;
+        margin: 5px 1px 3px 2px;
+        font-size: 0.8vw;
+    }
+
+    .Shop .nav {
+        height: 40px;
+        font-size: 3vw;
+    }
+
+    .one, .two, .three, .four, .five, .six, .seven {
+        font-size: 1.5vw;
+    }
+
+    .adopt .heading2{
+        font-size: 1.8vw;
+    }
+
+    .adopt .rescue{
+        font-size: 3vw;
+    }
+
+    .service .list{
+        font-size: 2.5vw;
+    }
+
+    .about p{
+        font-size: 2.4vw;
+    }
+    
+    .about h3{
+        font-size: 2.4vw;
+    }
+
+    .about h4{
+        font-size: 2.3vw;
+    }
+
+    .about h2{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-height: 600px) {
+    .heading1{
+        min-height: 228px;
+    }
+    .first, .second, .third, .fourth{
+        min-height: 230px;
+    }
+    .first-box, .second-box, .third-box, .fourth-box{
+        min-height: 202px;
+    }
+}
+
+/* rgb(243 198 150) */
+/* rgb(241 151 103) */
