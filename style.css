@@ -8,7 +8,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: var(--body-color);
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -84,7 +84,7 @@ header button:hover {
 
 .left {
     max-width: 450px;
-    background-image: url(/Intern_Project/assets/Images/left.jpeg);
+    background-image: url(/assets/Images/left.jpeg);
     background-size: 300px 650px;
     position: relative;
     overflow: hidden;
@@ -255,7 +255,7 @@ header button:hover {
 }
 
 .first-box{
-    background-image: url(/Intern_Project/assets/Images/pet1.jpeg);
+    background-image: url(/assets/Images/pet1.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -266,7 +266,7 @@ header button:hover {
 }
 
 .second-box{
-    background-image: url(/Intern_Project/assets/Images/pet2.jpeg);
+    background-image: url(/assets/Images/pet2.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -277,7 +277,7 @@ header button:hover {
 }
 
 .third-box{
-    background-image: url(/Intern_Project/assets/Images/pet3.jpeg);
+    background-image: url(/assets/Images/pet3.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -288,7 +288,7 @@ header button:hover {
 }
 
 .fourth-box{
-    background-image: url(/Intern_Project/assets/Images/pet4.jpg);
+    background-image: url(/assets/Images/pet4.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
