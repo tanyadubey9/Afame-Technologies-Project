@@ -255,7 +255,7 @@ header button:hover {
 }
 
 .first-box{
-    background-image: url(/assets/Images/pet1.jpeg);
+    background-image: url(assets/Images/pet1.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
