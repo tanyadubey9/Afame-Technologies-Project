@@ -604,26 +604,34 @@ header button:hover {
     border-radius: 20px;
     border: 0;
     margin: 10px;
+    width: 8vw;
+    font-size: 12px;
 }
 
 .checkbox{
     text-align: start;
-    font-size: 0.8vw;
+    font-size: 10px;
     color: white;
     margin: auto;
+}
+
+.checkbox input{
+    margin: 0;
+    width: 18px;
+    font-size: 7px;
 }
 
 .SignUp button, .LogIn button{
     margin: auto;
     padding: 10px;
     width: 50%;
-    font-size: 0.8vw;
+    font-size: 10px;
     border-radius: 20px;
     background-color: var(--nav-color-1);
     border: 2px solid white;
 }
 .SignUp button:hover, .LogIn button:hover{
-    font-size: 0.9vw;
+    font-size: 11px;
     padding: 11px;
 }
 
@@ -653,6 +661,10 @@ header button:hover {
     padding: 6px;
     width: 16vw;
     }
+    header button:hover{
+        font-size: 1.7vw;
+        padding: 7px;
+    }
 
     .left {
         position: absolute;
@@ -674,6 +686,9 @@ header button:hover {
     .details button {
         font-size: 2vw;
         width: 20vw;
+    }
+    .details button:hover{
+        font-size: 2.1vw;
     }
 
     .cross {
@@ -746,12 +761,31 @@ header button:hover {
     .about h2{
         font-size: 2.2vw;
     }
+
+    .SignUp .SignUp-Box, .LogIn .LogIn-Box{
+        font-size: 14px;
+    }
+
+    .SignUp input, .LogIn input{
+        font-size: 10px;
+    }
+
+    .checkbox input{
+    margin: 0;
+    width: 18px;
+    font-size: 7px;
+}
+
+    .SignUp-Box .login_signup{
+        height: 45px;
+    font-size: 12px;
+    }
 }
 
 @media (max-width: 700px) {
     header{
         height: 70px;
-        font-size: 2.4vw;
+        font-size: 2.6vw;
     }
 
     .hamburger{
@@ -765,6 +799,9 @@ header button:hover {
     .details button {
         font-size: 3vw;
         width: 30vw;
+    }
+    .details button:hover{
+        font-size: 3.1vw;
     }
 
     .right nav{
@@ -848,6 +885,25 @@ header button:hover {
 
     .about h2{
         font-size: 2.5vw;
+    }
+
+    .checkbox input{
+    margin: 0;
+    width: 18px;
+    font-size: 7px;
+}
+
+    .SignUp input, .LogIn input {
+    width: 57px;
+    font-size: 10px;
+    padding: 6px;
+}
+
+    .FName, .SName, .email, .pswd{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
