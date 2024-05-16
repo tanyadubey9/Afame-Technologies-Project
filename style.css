@@ -597,6 +597,7 @@ header button:hover {
     border-radius: 20px;
     background-color: var(--button-color-1);
     color: var(--font-color-2);
+    padding: 10px;
 }
 
 .SignUp input, .LogIn input{
@@ -613,6 +614,10 @@ header button:hover {
     font-size: 9px;
     color: white;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;    
 }
 
 .checkbox input{
@@ -658,14 +663,14 @@ header button:hover {
 
     header button{
         font-size: 1.6vw;
-    padding: 6px;
+    padding: 4px;
     width: 16vw;
     }
     header button:hover{
         font-size: 1.7vw;
-        padding: 7px;
+        padding: 6px;
     }
-
+    
     .left {
         position: absolute;
         left: -350px;
@@ -785,15 +790,15 @@ header button:hover {
 @media (max-width: 700px) {
     header{
         height: 70px;
-        font-size: 2.6vw;
+        font-size: 12px;
     }
 
     .hamburger{
-       width: 23px;
+        width: 23px;
     }
 
     .logo .img{
-        width: 8vw;
+        width: 35px;
     }
 
     .details button {
@@ -889,14 +894,14 @@ header button:hover {
 
     .checkbox input{
     margin: 0;
-    width: 18px;
+    width: 10px;
     font-size: 7px;
 }
 
     .SignUp input, .LogIn input {
     width: 57px;
     font-size: 10px;
-    padding: 6px;
+    padding: 3px;
 }
 
     .FName, .SName, .email, .pswd{
